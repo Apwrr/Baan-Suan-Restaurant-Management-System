@@ -31,7 +31,7 @@ class ApiService {
       List<dynamic> data = json.decode(responseBody);
       print(data.length);
       print('Category ok!');
-      return data.map((json) => Category.fromJson(json)).toList();//
+      return data.map((json) => Category.fromJson(json)).toList();
     } else {
       throw Exception('Failed to load categories');
     }
